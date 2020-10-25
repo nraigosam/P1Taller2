@@ -11,12 +11,7 @@ class historialController extends Controller
 {
     public function index()
     {
-        $historial = Historial::get();
+        $historial = Historial::all();
         return view('historial', compact('historial'));
-    }
-
-    public function show(Historial $hist)
-    {
-        return view('historial', compact('hist'));
     }
 }

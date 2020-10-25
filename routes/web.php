@@ -15,10 +15,9 @@ use app\Http\Controllers\historialController;
 
 Route::view('/', 'home')->name('home');
 
-Route::get('/juego', 'App\Http\Controllers\gameController@index')->name('game');
-Route::get('/juego', 'App\Http\Controllers\gameController@play')->name('game');
+Route::get('/juego', [App\Http\Controllers\gameController::class, 'index'])->name('game');
+Route::post('/juego', [App\Http\Controllers\gameController::class, 'play'])->name('game');
 
-Route::get('historial', 'App\Http\Controllers\historialController@index')->name('historial.index');
-Route::get('historial/{post:slug}', 'App\Http\Controllers\historialController@show')->name('historial.show');
+Route::get('historial', [App\Http\Controllers\historialController::class, 'index'])->name('historial.index');
 
 

@@ -6,7 +6,7 @@
     <ul>
         @foreach($historial as $hist)
         <li>
-            <a href="{{ route('historial.show', $hist->slug)}}"></a>
+           your color was {{$hist->yourColor}} and the correc color was {{$hist->color}}
         </li>
 
         @endforeach
