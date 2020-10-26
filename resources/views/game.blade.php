@@ -3,28 +3,6 @@
 @section('content')
 <h2>game</h2>
 
-<!-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-
-            <div class="card w-75">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <form method="POST">
-                        {{csrf_field()}}
-
-                        <fieldset id="enteredValue">
-                            <h3><legend>ingrese un color</legend></h3>
-                            <input id="guesstext" type="text" name="enteredValue" autofocus id="two" />
-                            <input id="guessbutton" type="submit" value="Guess" id="two" class="btn btn-primary" />
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div> -->
 <form method="POST">
         {{csrf_field()}}
         <fieldset>
